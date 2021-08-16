@@ -1,0 +1,40 @@
+.question-panel {
+    background-color: #C8D0D5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-qa-panel {
+    padding-left: 2%;
+    height: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.question-panel-buttons-panel {
+    padding-right: 1%;
+    background-color: #e7b472;
+    text-align: right;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+.question-panel-buttons button {
+	margin: 5px;
+}
+
+.block-icon {
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+	.question-panel-buttons-panel {
+		width: 100%;
+	}
+
+    .question-panel-buttons button {
+        margin: 2px;
+    }
+}

@@ -1,0 +1,14 @@
+<app-loading-modal *ngIf="!showGrid"></app-loading-modal>
+<div style="padding: 10px;">
+	<button type="button" class="btn btn-primary" (click)="continue()">Continue</button>
+	<hr />
+	<div *ngIf="showGrid" style="height: 500px;">
+		<!-- <ag-grid-angular style="width: auto; height: 70%;" class="ag-theme-alpine-dark" [rowData]="rowData"
+			[columnDefs]="columnDefs" [defaultColDef]="defaultColDefs" (gridReady)="onGridReady($event)"
+			(columnResized)="resetRowHeight()">
+		</ag-grid-angular> -->
+		<ag-grid-angular style="width: auto; height: 500px;" class="ag-theme-alpine" [rowData]="rowData"
+			[columnDefs]="columnDefs" [defaultColDef]="defaultColDefs">
+		</ag-grid-angular>
+	</div>
+</div>

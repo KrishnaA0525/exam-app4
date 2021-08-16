@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "questionId": 1,
+        "answer": "9"
+    },
+    {
+        "id": 2,
+        "questionId": 2,
+        "answer": "20"
+    },
+    {
+        "id": 3,
+        "questionId": 3,
+        "answer": "400"
+    },
+    {
+        "id": 4,
+        "questionId": 4,
+        "answer": "3:1"
+    },
+    {
+        "id": 5,
+        "questionId": 5,
+        "answer": "Saturday"
+    },
+    {
+        "id": 6,
+        "questionId": 6,
+        "answer": "act"
+    },
+    {
+        "id": 7,
+        "questionId": 6,
+        "answer": "increase"
+    },
+    {
+        "id": 8,
+        "questionId": 7,
+        "answer": "jeopardize"
+    },
+    {
+        "id": 9,
+        "questionId": 8,
+        "answer": "when he reaches the factory"
+    },
+    {
+        "id": 10,
+        "questionId": 9,
+        "answer": "contribute towards its growth"
+    },
+    {
+        "id": 11,
+        "questionId": 10,
+        "answer": "India's most fastest growing sanctuary"
+    }
+]
