@@ -116,6 +116,7 @@ export class ResultsComponent implements OnInit, OnDestroy, ResultsDeactivateInt
 
 	continue() {
 		this.canRedirectAway = true;
+		this.questionsService.isAutoSubmit = false;
 		this.router.navigate(["home"]);
 	}
 

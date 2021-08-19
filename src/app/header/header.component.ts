@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 	constructor(private questionsService: QuestionsService, private router: Router) { }
 
 	ngOnInit(): void {
-		this.examTime = 10;
+		this.examTime = 10 * 60;
 		this.hours = Math.floor(this.examTime / (60 * 60));
 		this.minutes = Math.floor(this.examTime / 60);
 		this.seconds = this.examTime % 60;
@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 				console.log("Time up!");
 				this.intervalSubscription.unsubscribe();
 				this.questionsService.isAutoSubmit = true;
-				/* this.router.navigate(["results"]); */
+				this.router.navigate(["results"]);
 			} else {
 				if (this.seconds === 0) {
 					this.seconds = 59;
