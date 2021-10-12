@@ -31,6 +31,7 @@
 
 @media (max-width: 600px) {
 	.home {
+		flex: 12;
 		flex-direction: column;
 	}
 

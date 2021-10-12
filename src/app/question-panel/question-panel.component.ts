@@ -1,5 +1,5 @@
 import { trigger, style, transition, animate, query, stagger } from '@angular/animations';
-import { Component, Injector, OnDestroy, OnInit } from '@angular/core';
+import { Component, Injector, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Params, Router, Event, NavigationEnd } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { cloneDeep } from 'lodash';

@@ -40,3 +40,12 @@ export class SignUpComponent implements OnInit {
 	}
 
 }
+
+// @Component({
+// 	selector: 'app-ab',
+// 	templateUrl: './sign-up.component.html',
+// 	styleUrls: ['./sign-up.component.css']
+// })
+// export class Ab {
+
+// }

@@ -1,5 +1,5 @@
 <app-loading-modal *ngIf="!questionLoaded"></app-loading-modal>
-<ng-template [ngIf]="questionLoaded">
+<div *ngIf="questionLoaded" class="question-main-panel">
     <div class="question-panel">
         <!-- Question -->
         <div class="question-qa-panel">
@@ -38,4 +38,4 @@
                 (click)="onGetNextOrPrevious(question.id, true)">Next</button>
         </div>
     </div>
-</ng-template>
+</div>

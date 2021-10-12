@@ -33,14 +33,22 @@
                         ngModel
                         name="hallticketNumber"
                         #hallticketNumber="ngModel"
-                        required>
+                        required
+                        appErrorWarningValidator
+                        errorPattern="1">
                     <div class="help-block" *ngIf="hallticketNumber.invalid && hallticketNumber.touched" style="color: red;">
                         Hallticket number is required.
+                    </div>
+                    <div class="help-block" *ngIf="hallticketNumber?.errors?.error" style="color: red;">
+                        Error icon.
+                    </div>
+                    <div class="help-block" *ngIf="hallticketNumber?.errors?.warning" style="color: red;">
+                        warning icon.
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email" class="control-label">Email*</label>
-                    <input type="text" id="email" class="form-control" ngModel name="email"
+                    <input type="email" id="email" class="form-control" ngModel name="email"
                         #email="ngModel" required email>
                     <div class="help-block" *ngIf="email.invalid && email.touched" style="color: red;">
                         Please enter a valid Email addess.
@@ -55,3 +63,10 @@
         </div>
     </form>
 </div>
+
+
+<section>
+    <div class="shadow-dom">
+        THis is shadow dom.
+    </div>
+</section>

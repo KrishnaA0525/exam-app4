@@ -1,10 +1,11 @@
 .q-num-panel {
     width: 100%;
+    max-height: 500px;
     overflow-y: auto;
 }
 
 .q-num-button-separator {
-    margin: 0;
+    /* margin: 100px 10px; */
     padding: 5%;
     display: inline-block;
 }

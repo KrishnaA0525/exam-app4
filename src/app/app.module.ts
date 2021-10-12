@@ -17,7 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgGridModule } from 'ag-grid-angular';
 import { ResultsComponent } from './results/results.component';
 import { QuestionsService } from './service/questions.service';
-import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { HeaderComponent } from './header/header.component';
 import { TimeFormatterPipe } from './pipes/time-formatter.pipe';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -25,6 +25,7 @@ import { StoreModule } from '@ngrx/store';
 import { reducer } from './question-panel/qp-store/questions.reducer';
 import { DemoDirective } from './directives/demo.directive';
 import { MatIconModule } from '@angular/material/icon';
+import { ErrorWarningValidatorDirective } from './app-error-warning-validator.directive';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MatIconModule } from '@angular/material/icon';
     HeaderComponent,
     TimeFormatterPipe,
     SignUpComponent,
-    DemoDirective
+    DemoDirective,
+    ErrorWarningValidatorDirective
   ],
   imports: [
     BrowserModule,

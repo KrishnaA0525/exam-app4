@@ -13,7 +13,8 @@
   height: 12px;
   border-radius: 6px / 12px;
   transform-origin: 3px 27px;
-}.ldio-meg98xc3gyn div:nth-child(1) {
+}
+.ldio-meg98xc3gyn div:nth-child(1) {
   transform: rotate(0deg);
   animation-delay: -0.9166666666666666s;
   background: #0f3edb;

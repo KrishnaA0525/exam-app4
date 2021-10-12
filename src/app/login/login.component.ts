@@ -1,5 +1,5 @@
 import { HttpErrorResponse, HttpResponse } from "@angular/common/http";
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { MatDialog } from "@angular/material/dialog";
 import { Router } from "@angular/router";
@@ -13,7 +13,8 @@ import { LoginService } from "../service/login.service";
 @Component({
     selector: 'app-login',
     templateUrl: 'login.component.html',
-    styleUrls: ['login.component.css']
+    styleUrls: ['login.component.css'],
+    encapsulation: ViewEncapsulation.Emulated
 })
 export class LoginComponent implements OnInit {
     login = {

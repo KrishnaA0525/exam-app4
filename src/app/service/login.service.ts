@@ -1,4 +1,4 @@
-import { HttpClient, HttpErrorResponse, HttpEventType } from "@angular/common/http";
+import { HttpClient, HttpErrorResponse, HttpEventType, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { throwError } from "rxjs";
 import { catchError, tap } from "rxjs/operators";
@@ -22,7 +22,11 @@ export class LoginService {
 		}); */
 
 		return this.http.get(url, {
-			observe: "response"
+			observe: "events",
+			headers: new HttpHeaders({
+				a: "a"
+			}),
+			params: new HttpParams().set("a", "a")
 		})
 	}
 }
